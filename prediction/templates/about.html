@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+{% load staticfiles %}
+{% block title %} About us {% endblock %}
+{% block content %}
+<section>
+  <div class="">
+    <h2 class="m-2 center_align jumbotron"> Welcome to the automated leaf counter!</h2>
+    <div class="" style="font-size: 1.4em;">
+    <p class="" >This deep learning based tool allows you to quickly determine the number of leaves for your dataset. To get started, upload your image(s) below.
+      In order to save your analysis history, please consider <a class="nav-link faq" href="{% url 'user_app:signup' %}">signing up.</a></p>
+      <br>
+      <div>
+<ul>
+<li> To get started, upload your image(s) <a class="btn btn-primary" href="{% url 'user_app:home' %}">here</a></li></ul
+>
+</div>
+      <div style="text-align: center">
+        <img src="{% static 'img/countlogo.png'%}" alt="Image not found."
+        style="max-height: 500px">
+      </div>
+    </div>
+    <br>
+  </div>
+  <div class="mt-5 jumbotron">
+    <h3>About CountLeaves</h3>
+    <p>Deep learning <a href="https://bitbucket.org/tuttoweb/pheno-deep-counter/src/master/">algorithm</a> by <a href="http://www.valeriogiuffrida.academy/">Valerio Giuffrida</a>
+    <p>Supervision and guidance by <a href="http://www.joao-valente.com/">Joao Valente</a></p>
+    <p>Web application by <a href="mailto:mihai.frangulea@wur.nl">Mihai Frangulea</a> and <a href="mailto:rajat4665@gmail.com">Rajat Sharma</a></p>
+  </div>
+</section>
+
+<footer>
+    <p>{% include "footer.html" %}</p>
+</footer>
+{% endblock %}

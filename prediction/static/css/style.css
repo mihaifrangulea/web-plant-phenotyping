@@ -1,0 +1,37 @@
+body{
+	margin: 0;
+  padding: 0;
+}
+
+a.nav-link {
+  font-size: 20px;
+  font-weight: bolder;
+}
+
+nav.navbar.navbar-expand-lg {
+  position: absolute;
+  width: 100%;
+}
+
+.footer-height {
+	margin-top: 220px;
+
+}
+
+.center_align {
+  text-align: center;
+}
+
+.font_mega {
+	font-size: 2em;
+	text-shadow: 1px 1.8px gray;
+}
+.custom_table_header {
+  background-color: lightskyblue;
+}
+
+.heading_clr{
+  background-color: lightskyblue;
+  margin-top: 10px;
+  padding:10px;
+}

@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+{% block title %} Sign Up Page {% endblock %}
+{% block head_css_page %}
+<style>
+  .invalid-feedback{
+    color: red;
+    font-size: x-large;
+}
+</style>
+{% endblock head_css_page %}
+{% load bootstrap4 %}
+{% block content %}
+  <h2 class="jumbotron center_align">Sign up</h2>
+  <div class="col-md-8">
+  <form method="post">
+    {% csrf_token %}
+    {% bootstrap_form form %}
+    <button type="submit" class="btn btn-primary">Sign up</button>
+  </form>
+  </div>
+{% endblock %}
