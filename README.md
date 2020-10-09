@@ -5,10 +5,10 @@ GENERAL INSTRUCTIONS:
 1) In the root directory, find and install req.txt. It contains all necessary packages.
 2) Within the same directory, the following commands can be executed:
 
-python3 manage.py runserver (to start the local server)
-python3 manage.py makemigrations (to convert the python models into SQL instructions)
-python3 manage.py migrate (to execute the converted SQL instructions in database)
-python3 manage.py createsuperuser (to create superuser, to access admin panel)
+- python3 manage.py runserver (to start the local server)
+- python3 manage.py makemigrations (to convert the python models into SQL instructions)
+- python3 manage.py migrate (to execute the converted SQL instructions in database)
+- python3 manage.py createsuperuser (to create superuser, to access admin panel)
 
 
 ROOT DIRECTORY:
